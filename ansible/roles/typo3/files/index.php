@@ -490,7 +490,7 @@
 				'local.typo3.org'
 			);
 			foreach ($sites as $site) {
-				if (!in_array($site, $exclude) && !strstr($site, 'local.neos.io')) {
+				if (!in_array($site, $exclude)) {
 					echo '<li><a href="http://' . $site . '/typo3/">http://' . $site . '/typo3/</a></li>';
 				}
 			}

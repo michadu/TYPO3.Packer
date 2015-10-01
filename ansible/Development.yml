@@ -7,7 +7,6 @@
     - configuration/Development/nginx.yml
     - configuration/Development/php.yml
     - configuration/Development/websites.yml
-    - configuration/Development/neos.yml
     - configuration/Development/typo3.yml
   roles:
     - { role: common,    tags: common }
@@ -18,7 +17,6 @@
     - { role: hhvm,      tags: hhvm }
     - { role: composer,  tags: composer }
     - { role: typo3,     tags: typo3 }
-    - { role: neos,      tags: neos }
     - { role: memcached, tags: memcached }
     - { role: nginx,     tags: nginx }
     - { role: nodejs,    tags: nodejs }

@@ -43,17 +43,3 @@ nginx_typo3_404_redirect: |
   location @404 {
     rewrite ^ $scheme://local.typo3.org;
   }
-
-nginx_neos_404_redirect: |
-  location @404 {
-    rewrite ^ $scheme://local.neos.io;
-  }
-
-nginx_typo3_neos_resources: |
-  location ~ "^/_Resources/Persistent/" {
-    if ($version ~ (1.0|1.1|1.2)) {
-      expires max;
-      rewrite "(.{40})/.+\.(.+)" /_Resources/Persistent/$1.$2 break;
-      rewrite "([a-z0-9]+/(.+/)?[a-f0-9]{40})/.+\.(.+)" /_Resources/Persistent/$1.$2 break;
-    }
-  }

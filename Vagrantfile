@@ -100,8 +100,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 # 		'6.2.9.local.typo3.org',
 # 		'7.0.local.typo3.org',
 # 		'7.0.2.local.typo3.org',
-# 		'1.2.neos.local.typo3.org',
-# 		'dev-master.neos.local.typo3.org'
 # 		]
 
 	# Network
