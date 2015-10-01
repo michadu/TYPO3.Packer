@@ -1,4 +1,0 @@
----
-
-- name: Setup cron job for neos temp ramfs automounter
-  cron: name="Run neos temp ramfs automounter" job="[ -x /root/bin/mountNeosTemp.sh ] && /root/bin/mountNeosTemp.sh 2>/dev/null > /dev/null "

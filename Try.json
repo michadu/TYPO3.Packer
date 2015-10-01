@@ -41,7 +41,6 @@
         "ansible/roles/composer",
         "ansible/roles/mariadb",
         "ansible/roles/memcached",
-        "ansible/roles/neos",
         "ansible/roles/nginx",
         "ansible/roles/php-fpm",
         "ansible/roles/phpcommon",
